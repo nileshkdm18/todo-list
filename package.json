@@ -1,0 +1,22 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "Todo List",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nileshkdm18/todo-list.git"
+  },
+  "author": "Nilesh Kadam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nileshkdm18/todo-list/issues"
+  },
+  "homepage": "https://github.com/nileshkdm18/todo-list#readme",
+  "devDependencies": {
+    "husky": "^8.0.3"
+  }
+}

@@ -1,0 +1,36 @@
+# Directories of binaries
+node_modules/
+ui-react-ts/dist/*
+server-node/dist/*
+
+
+# Environment
+ui-react-ts/.env*.local
+server-node/.env*.local
+
+# npm logs
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+**/chromedriver.log
+**/geckodriver.log
+
+# Test output
+ui-react-ts/coverage/
+server-node/coverage/
+
+# OS Files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE - Eclipse
+**/.project/
+**/.metadata/
+
+# IDE - IntelliJ
+**/.idea/*
+*.iml
+
+# IDE - VSCode
+**/.vscode/
