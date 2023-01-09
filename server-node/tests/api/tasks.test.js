@@ -4,7 +4,7 @@ import database from '../../src/database'
 
 const newEntry = {
   description: 'test',
-  published: true
+  completed: false
 }
 
 jest.useRealTimers()
@@ -66,9 +66,8 @@ describe('Task Api', () => {
 
     it('should get error while creating a task', async () => {
       const resp = await request(app).post('/api/tasks').send({})
-      record = resp.body
       expect(resp.statusCode).toBe(400)
-      expect(record.message).toBe('Content can not be empty!')
+      expect(resp.body.message).toBe('Content can not be empty!')
     })
   })
 
