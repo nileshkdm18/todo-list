@@ -21,4 +21,11 @@ app.use('/docs', function (req, res, next) {
   next()
 }, swaggerUi.serve, swaggerUi.setup())
 
+// Not found route
+app.use('*', (req, res) => {
+  res.status(404).send({
+    message: 'You reached a route that is not defined on this server'
+  })
+})
+
 module.exports = app

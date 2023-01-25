@@ -1,18 +1,11 @@
 const db = require('./models')
 const connect = async () => {
-  db.mongoose
+  return db.mongoose
     .connect(db.url, {
       connectTimeoutMS: 5000,
       socketTimeoutMS: 5000,
       useNewUrlParser: true,
       useUnifiedTopology: true
-    })
-    .then(() => {
-      console.log('Connected to the database!')
-    })
-    .catch(err => {
-      console.log('Cannot connect to the database!', err)
-      process.exit()
     })
 }
 
